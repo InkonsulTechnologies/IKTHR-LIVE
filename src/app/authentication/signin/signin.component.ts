@@ -50,6 +50,7 @@ images = [
   loading = false;
   error = '';
   hide = true;
+  loginheader = 'Admin';
   constructor(
     private formBuilder: UntypedFormBuilder,
     private route: ActivatedRoute,
@@ -71,14 +72,17 @@ images = [
   adminSet() {
     this.authForm.get('username')?.setValue('admin@software.com');
     this.authForm.get('password')?.setValue('admin@123');
+    this.loginheader = 'Admin'
   }
   employeeSet() {
     this.authForm.get('username')?.setValue('employee@software.com');
     this.authForm.get('password')?.setValue('employee@123');
+    this.loginheader = 'Employee'
   }
   clientSet() {
     this.authForm.get('username')?.setValue('client@software.com');
     this.authForm.get('password')?.setValue('client@123');
+    this.loginheader = 'Client'
   }
   onSubmit() {
     this.submitted = true;
