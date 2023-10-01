@@ -89,12 +89,11 @@
 
 <div class="auth-container">
     <div class="row auth-main">
-        <div class="col-sm-7 px-0 d-none d-sm-block"
-            style="background: rgb(208, 208, 208); border-radius: 25px 0px 0px 25px;">
+        <div class="col-xl-7 col-sm-12 px-0 d-none d-sm-block" style="background: #1e1a22; border-radius: 5px 0px 0px 5px;">
             <div class="left-img" style="background-image: url(assets/images/image3.png);">
             </div>
         </div>
-        <div class="col-sm-5 auth-form-section">
+        <div class="col-xl-5 col-sm-12 auth-form-section">
             <div class="form-section">
                 <div class="auth-wrapper">
                     <div class="auth-text-wrapper">
@@ -141,8 +140,7 @@
                                 <mat-form-field class="example-full-width" appearance="outline">
                                     <mat-label>Password</mat-label>
                                     <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
-                                    <a href="#" onClick="return false;" matSuffix (click)="hide = !hide"
-                                        [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                    <a href="#" onClick="return false;" matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                                         <mat-icon class="material-icons-two-tone color-icon m-3" matSuffix>
                                             {{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                                     </a>
@@ -164,15 +162,13 @@
                             <a class="text-login" routerLink="/authentication/forgot-password">Forgot Password?</a>
                         </div>
                         <div class="bottom-text">
-                            <p style="color:gray">Powered By <span
-                                    style="color:teal;font-family:'Times New Roman';font-size: 18px;">Inkonsul
+                            <p style="color:gray">Powered By <span style="color:teal;font-family:'Times New Roman';font-size: 18px;">Inkonsul
                                     Technologies</span></p>
                         </div>
                         <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
                         <div class="container-auth-form-btn">
                             <div style="text-align:center">
-                                <button mat-raised-button [class.auth-spinner]="loading" [disabled]="loading"
-                                    class="auth-form-btn" [disabled]="!authForm.valid " type="submit">Login</button>
+                                <button mat-raised-button [class.auth-spinner]="loading" [disabled]="loading" class="auth-form-btn" [disabled]="!authForm.valid " type="submit">Login</button>
                             </div>
                         </div>
                     </form>
