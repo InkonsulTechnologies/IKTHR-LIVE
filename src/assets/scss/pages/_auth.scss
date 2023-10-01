@@ -267,7 +267,7 @@
     padding: 30px 15px;
     position: relative;
     z-index: 1;
-    border-radius: 25px 0px 0px 25px;
+    border-radius: 5px 0px 0px 5px;
     //background: white;
 }
 
@@ -295,8 +295,9 @@
 }
 
 .auth-form-section {
+    padding: 25px;
     background-color: #fff;
-    border-radius: 0px 25px 25px 0px;
+    border-radius: 0px 5px 5px 0px;
 }
 
 .form-section {
