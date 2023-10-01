@@ -464,3 +464,9 @@
     border-top-color: #000000;
     animation: spinner 0.8s linear infinite;
 }
+
+@media screen and (max-width: 768px) {
+    .auth-main {
+        padding: 0px !important;
+    }
+}
