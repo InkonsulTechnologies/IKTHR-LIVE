@@ -1,3 +1,4 @@
+
 {
   "MENUITEMS": {
     "MAIN": {
@@ -8,6 +9,17 @@
       "LIST": {
         "DASHBOARD1": "Dashboard 1",
         "DASHBOARD2": "Dashboard 2"
+      }
+    },
+    "ATS": {
+      "TEXT": "ATS",
+      "LIST": {
+        "ATS1": "Home",
+        "ATS2": "Jobs",
+        "ATS3": "Assesment",
+        "ATS4": "Talent pool",
+        "ATS5": "Schedule An Interview",
+        "ATS6":  "Analytics"
       }
     },
     "PROJECTS": {
